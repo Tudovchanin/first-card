@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>sez us</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top-mobile">
+            <div class="time"></div>
+
+            <div class="header-icons">
+                <div class="icon-connect">
+                    <img src="./images/icons/Cellular-Connection.svg" alt="connect">
+                </div>
+                <div class="icon-wi-fi">
+                    <img src="./images/icons/Wifi.svg" alt="wi-fi">
+                </div>
+                <div class="icon-battery">
+                    <img src="./images/icons/Battery.svg" alt="battery">
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom__label-container">
+                <a href="/" class="label">
+                    <div class="label__img">
+                        <img src="./images/Bubbles.svg" alt="Bubbles label">
+                    </div>
+                    <div class="label__text">sez us</div>
+                </a>
+            </div>
+            <div class="auth-point-wrapper">
+                <div class="auth-container">
+                    <div class="auth-buttons">
+                        <button class="login-btn">Login</button>
+                        <button class="sign-up-btn">Sign Up</button>
+                    </div>
+                    <div class="wrapper-form wrapper-form-login" style="display: none;">
+                        <img class="close-icon" src="./images/icons/close-icon.png" alt="close">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" name="user-name"
+                                class="username-input mg-bottom-20" />
+                            <input type="password" placeholder="Password" name="user-password"
+                                class="password-input mg-bottom-20" />
+                            <button class="submit-button">Submit</button>
+                        </form>
+                    </div>
+                    <div class="wrapper-form wrapper-form-sign-up" style="display: none;">
+                        <img class="close-icon" src="./images/icons/close-icon.png" alt="close">
+                        <form class="sign-up-form">
+                            <input type="text" placeholder="Username" name="user-name"
+                                class="username-input mg-bottom-20" />
+                            <input type="email" placeholder="Email" name="user-email"
+                                class="email-input mg-bottom-20" />
+                            <input type="password" placeholder="Password" name="user-password"
+                                class="password-input mg-bottom-20" />
+                            <button class="submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="point-balance" style="display: none;">
+                    <div class="point-balance__icon">
+                        <img src="./images/icons/Vector2.svg" alt="icon balance">
+                    </div>
+                    <div class="point-balance__total">0</div>
+                    <div class="point-balance__btn">
+                        <button class="btn-point-balance">
+                            <img src="./images/icons/chevron_right.svg" alt="btn point balance">
+                        </button>
+                    </div>
+                    <button class="notification">
+                        <img class="notification__icon" src="./images/icons/bubble-left.svg" alt="messages">
+                        <span class="notification__badge notification__badge--messages"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="content-left">
+            <div class="content-left__block">
+                <ul class="left-menu x-center">
+                    <li class="left-menu__item icon-home">
+                        <button class="btn-menu">
+                            <span class="notification btn-menu__container-icon">
+                                <img class="notification__icon btn-menu__icon active-menu-img"
+                                    src="./images/icons/home.svg" alt="messages">
+                                <span class="notification__badge notification__badge--home"></span>
+                            </span>
+                            <span class="btn-menu__text active-menu-text">Home</span>
+                        </button>
+                    </li>
+                    <li class="left-menu__item icon-notifications">
+                        <button class="btn-menu">
+                            <span class="notification btn-menu__container-icon">
+                                <img class="notification__icon btn-menu__icon" src="./images/icons/bell.svg"
+                                    alt="messages">
+                                <span class="notification__badge notification__badge--bell"></span>
+                            </span>
+                            <span class="btn-menu__text">Notifications</span>
+                        </button>
+                    </li>
+                    <li class="left-menu__item icon-settings">
+                        <button class="btn-settings btn-menu">
+                            <span class="notification btn-menu__container-icon">
+                                <img class="notification__icon btn-menu__icon" src="./images/icons/Vector.svg"
+                                    alt="Settings"></span>
+                            <span class="btn-menu__text">Settings</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-left__block"></div>
+            <div class="content-left__block"></div>
+        </div>
+        <div class="content-center">
+            <nav class="nav-main mg-bottom-20">
+                <ul class="list-page">
+                    <li class="list-page__item"><a href="#" class="list-page__item-link">For you</a></li>
+                    <li class="list-page__item"><a href="#" class="list-page__item-link">News</a></li>
+                    <li class="list-page__item"><a href="#" class="list-page__item-link">Close friends</a></li>
+                    <li class="list-page__item"><a href="#" class="list-page__item-link">Family</a></li>
+                    <li class="list-page__item"><a href="#" class="list-page__item-link">Family</a></li>
+                </ul>
+            </nav>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card__avatar-info avatar-info">
+                        <div class="avatar-info__avatar">
+                            <img src="./images/Avatar.png" alt="User Avatar">
+                        </div>
+                        <div class="avatar-info__stats">8.4k</div>
+                    </div>
+                    <div class="wrapper-card-content">
+                        <div class="card__user-info">
+                            <div class="card__user-info-left">
+                                <div class="card__username username">Username</div>
+                                <div class="card__user-status user-status">Newbie</div>
+                            </div>
+                            <div class="card__user-info-right">
+                                <div class="card__time-posted">4h</div>
+                                <button class="card__button-options"><img src="./images/icons/Vector3.svg"
+                                        alt="options button"></button>
+                            </div>
+                        </div>
+                        <div class="card__main-content">
+                            <div class="card__main-content-text">His ever-lovin’ face smiles on the whole human race…
+                            </div>
+                            <div class="card__main-content-img">
+                                <img src="./images/Image.jpg" alt="content img">
+                            </div>
+                        </div>
+                        <div class="card__additional-content">
+                            <div class="card__additional-content-left">
+                                <div class="card__actions">
+                                    <button class="card__button card__button--like">
+                                        <img src="./images/icons/heart.svg" alt="like">
+                                    </button>
+                                    <button class="card__button card__button--dislike">
+                                        <img src="./images/icons/thumb_down.svg" alt="dislike">
+                                    </button>
+                                    <button class="card__button card__button--comment">
+                                        <img src="./images/icons/bubble-right.svg" alt="comment">
+                                    </button>
+                                    <button class="card__button card__button--quote">
+                                        <img src="./images/icons/quote.svg" alt="quote">
+                                    </button>
+                                    <button class="card__button card__button--send">
+                                        <img src="./images/icons/send.svg" alt="send">
+                                    </button>
+                                </div>
+                                <div class="card__action--mobile">
+
+                                    <div class="emoji-dropdown emoji-dropdown--like actions">
+                                        <button class="emoji-dropdown__toggle-like">
+                                            <img src="./images/icons/Badge row.png" alt="like">
+                                        </button>
+                                        <span class="value-like value-actions">123</span>
+                                    </div>
+
+                                    <div class="emoji-dropdown emoji-dropdown--dislike actions">
+                                        <button class="emoji-dropdown__toggle-dislike">
+                                            <img src="./images/icons/Badge row-diz.png" alt="dislike">
+                                        </button>
+                                        <span class="value-dislike value-actions"></span>
+
+                                    </div>
+                                    <div class="container-comment actions">
+                                        <button class="card__button card__button--comment">
+                                            <img src="./images/icons/bubble-right.svg" alt="comment">
+                                        </button>
+                                        <span class="value-comment value-actions"></span>
+
+                                    </div>
+                                    <div class="container-qute actions">
+                                        <button class="card__button card__button--quote">
+                                            <img src="./images/icons/quote.svg" alt="quote">
+                                        </button>
+                                        <span class="value-qute value-actions"></span>
+
+                                    </div>
+                                    <div class="container-send">
+                                        <button class="card__button card__button--send">
+                                            <img src="./images/icons/send.svg" alt="send">
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                                <div class="card__interaction-info">
+                                    <div class="card__interaction-item card__replies">11 replies</div>
+                                    <div class="card__interaction-item card__separator">•</div>
+                                    <div class="card__interaction-item card__reactions">323 reactions</div>
+                                </div>
+                            </div>
+                            <div class="card__additional-content-right">
+                                <div class="card__feedback">
+                                    <div class="card__reaction card__reaction--color-orange">Inspiring</div>
+                                    <div class="card__reaction card__reaction--color-blue">Brilliant</div>
+                                    <div class="card__reaction card__reaction--color-violet">Insightful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__avatar-info avatar-info">
+                        <div class="avatar-info__avatar">
+                            <img src="./images/Avatar.png" alt="User Avatar">
+                        </div>
+                        <div class="avatar-info__stats">8.4k</div>
+                    </div>
+                    <div class="wrapper-card-content">
+                        <div class="card__user-info">
+                            <div class="card__user-info-left">
+                                <div class="card__username username">Username</div>
+                                <div class="card__user-status user-status">Newbie</div>
+                            </div>
+                            <div class="card__user-info-right">
+                                <div class="card__time-posted">4h</div>
+                                <button class="card__button-options"><img src="./images/icons/Vector3.svg"
+                                        alt="options button"></button>
+                            </div>
+                        </div>
+                        <div class="card__main-content">
+                            <div class="card__main-content-text">His ever-lovin’ face smiles on the whole human race…
+                            </div>
+                            <div class="card__main-content-img">
+                                <img src="./images/Image.jpg" alt="content img">
+                            </div>
+                        </div>
+                        <div class="card__additional-content">
+                            <div class="card__additional-content-left">
+                                <div class="card__actions">
+                                    <button class="card__button card__button--like">
+                                        <img src="./images/icons/heart.svg" alt="like">
+                                    </button>
+                                    <button class="card__button card__button--dislike">
+                                        <img src="./images/icons/thumb_down.svg" alt="dislike">
+                                    </button>
+                                    <button class="card__button card__button--comment">
+                                        <img src="./images/icons/bubble-right.svg" alt="comment">
+                                    </button>
+                                    <button class="card__button card__button--quote">
+                                        <img src="./images/icons/quote.svg" alt="quote">
+                                    </button>
+                                    <button class="card__button card__button--send">
+                                        <img src="./images/icons/send.svg" alt="send">
+                                    </button>
+                                </div>
+                                <div class="card__action--mobile">
+
+                                    <div class="emoji-dropdown emoji-dropdown--like actions">
+                                        <button class="emoji-dropdown__toggle-like">
+                                            <img src="./images/icons/Badge row.png" alt="like">
+                                        </button>
+                                        <span class="value-like value-actions">123</span>
+                                    </div>
+
+                                    <div class="emoji-dropdown emoji-dropdown--dislike actions">
+                                        <button class="emoji-dropdown__toggle-dislike">
+                                            <img src="./images/icons/Badge row-diz.png" alt="dislike">
+                                        </button>
+                                        <span class="value-dislike value-actions"></span>
+
+                                    </div>
+                                    <div class="container-comment actions">
+                                        <button class="card__button card__button--comment">
+                                            <img src="./images/icons/bubble-right.svg" alt="comment">
+                                        </button>
+                                        <span class="value-comment value-actions"></span>
+
+                                    </div>
+                                    <div class="container-qute actions">
+                                        <button class="card__button card__button--quote">
+                                            <img src="./images/icons/quote.svg" alt="quote">
+                                        </button>
+                                        <span class="value-qute value-actions"></span>
+
+                                    </div>
+                                    <div class="container-send">
+                                        <button class="card__button card__button--send">
+                                            <img src="./images/icons/send.svg" alt="send">
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                                <div class="card__interaction-info">
+                                    <div class="card__interaction-item card__replies">11 replies</div>
+                                    <div class="card__interaction-item card__separator">•</div>
+                                    <div class="card__interaction-item card__reactions">323 reactions</div>
+                                </div>
+                            </div>
+                            <div class="card__additional-content-right">
+                                <div class="card__feedback">
+                                    <div class="card__reaction card__reaction--color-orange">Inspiring</div>
+                                    <div class="card__reaction card__reaction--color-blue">Brilliant</div>
+                                    <div class="card__reaction card__reaction--color-violet">Insightful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="content-right__input-search x-center">
+                <div class="search-block">
+                    <form class="search-form" action="#">
+                        <button type="submit" class="btn-search">
+                            <img src="./images/icons/search.svg" alt="button search">
+                        </button>
+                        <input type="text" class="search-input" placeholder="Search" aria-label="Search" name="query">
+                    </form>
+                </div>
+            </div>
+            <div class="content-right__users x-center">
+                <div class="content-right__header">
+                    <div class="content-right__title">Suggest for you</div>
+                    <button class="content-right__btn">See all</button>
+                </div>
+                <div class="content-right__main">
+                    <div class="content-right__user-info user-info">
+                        <div class="user-info__avatar avatar-info">
+                            <div class="avatar-info__avatar">
+                                <img src="./images/Avatar.png" alt="User Avatar">
+                            </div>
+                            <div class="avatar-info__stats avatar-info__stats--gradient-v2">8.4k</div>
+                        </div>
+                        <div class="user-info__text">
+                            <div class="user-info__user-details">
+                                <div class="username">Username</div>
+                                <div class="full-name">Full name</div>
+                            </div>
+                            <div class="user-info__status user-status">Newbie</div>
+                        </div>
+                        <div class="user-info__btn btn-follow">
+                            <button class="follow-button">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right__main">
+                    <div class="content-right__user-info user-info">
+                        <div class="user-info__avatar avatar-info">
+                            <div class="avatar-info__avatar">
+                                <img src="./images/Avatar.png" alt="User Avatar">
+                            </div>
+                            <div class="avatar-info__stats avatar-info__stats--gradient-v2">8.4k</div>
+                        </div>
+                        <div class="user-info__text">
+                            <div class="user-info__user-details">
+                                <div class="username">Username</div>
+                                <div class="full-name">Full name</div>
+                            </div>
+                            <div class="user-info__status user-status">Newbie</div>
+                        </div>
+                        <div class="user-info__btn btn-follow">
+                            <button class="follow-button">Follow</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-right__main">
+                    <div class="content-right__user-info user-info">
+                        <div class="user-info__avatar avatar-info">
+                            <div class="avatar-info__avatar">
+                                <img src="./images/Avatar.png" alt="User Avatar">
+                            </div>
+                            <div class="avatar-info__stats avatar-info__stats--gradient-v2">8.4k</div>
+                        </div>
+                        <div class="user-info__text">
+                            <div class="user-info__user-details">
+                                <div class="username">Username</div>
+                                <div class="full-name">Full name</div>
+                            </div>
+                            <div class="user-info__status user-status">Newbie</div>
+                        </div>
+                        <div class="user-info__btn btn-follow">
+                            <button class="follow-button">Follow</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-right__main">
+                    <div class="content-right__user-info user-info">
+                        <div class="user-info__avatar avatar-info">
+                            <div class="avatar-info__avatar">
+                                <img src="./images/Avatar.png" alt="User Avatar">
+                            </div>
+                            <div class="avatar-info__stats avatar-info__stats--gradient-v2">8.4k</div>
+                        </div>
+                        <div class="user-info__text">
+                            <div class="user-info__user-details">
+                                <div class="username">Username</div>
+                                <div class="full-name">Full name</div>
+                            </div>
+                            <div class="user-info__status user-status">Newbie</div>
+                        </div>
+                        <div class="user-info__btn btn-follow">
+                            <button class="follow-button">Follow</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mobile-footer">
+        <button class="btn-menu mobile-footer__item">
+            <span class="notification btn-menu__container-icon">
+                <img class="notification__icon btn-menu__icon active-menu-img" src="./images/icons/home.svg"
+                    alt="messages">
+                <span class="notification__badge notification__badge--home"></span>
+            </span>
+        </button>
+        <div class="search-block mobile-footer__item">
+            <form class="search-form mobile-footer__search-form" action="#">
+                <button type="submit" class="btn-search btn-search--mobile">
+                    <img src="./images/icons/search.svg" alt="button search">
+                </button>
+                <input type="text" class="search-input search-input--mobile-hidden" placeholder="Search"
+                    aria-label="Search" name="query">
+                <button class="search-close d-none">
+                    <img src="./images/icons/close-icon.png" alt="close input search">
+                </button>
+            </form>
+        </div>
+        <div class="create-mobile mobile-footer__item">
+            <img src="./images/icons/create.svg" alt="create">
+        </div>
+        <div>
+            <button class="btn-menu mobile-footer__item">
+                <span class="notification btn-menu__container-icon">
+                    <img class="notification__icon btn-menu__icon" src="./images/icons/bell.svg" alt="messages">
+                    <span class="notification__badge notification__badge--bell"></span>
+                </span>
+            </button>
+        </div>
+        <div class="mobile-footer__avatar mobile-footer__item">
+            <img src="./images/Avatar.png" alt="avatar">
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
