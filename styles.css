@@ -681,6 +681,7 @@ background-color: #a2e6357e;
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: var(--main-color);
 }
 
 .mobile-footer__item {
