@@ -409,9 +409,10 @@ background-color: #a2e6357e;
 .avatar-info__avatar {
   width: 36px;
   height: 36px;
-  border-radius: 100%;
-  overflow: hidden;
-  border: solid 1px;
+}
+
+.avatar-info__avatar img {
+    border-radius: 100%;
 }
 
 .avatar-info__stats {
